@@ -1,7 +1,7 @@
 import Grid from "@mui/material/Unstable_Grid2/Grid2";
 import {styled} from '@mui/material/styles';
-import { Paper } from "@mui/material";
-import { flexbox } from "@mui/system";
+import { Box, Paper } from "@mui/material";
+import ProjectMenu from "./ProjectMenu";
 
 const Item = styled(Paper)(({theme}) => ({
     backgroundColor: theme.palette.mode === 'dark' ? '#1A2027' : '#1A2027',
@@ -12,7 +12,10 @@ const Item = styled(Paper)(({theme}) => ({
 }));
 
 function GridSkeleton(){
-return(
+return(<>
+    <Box sx={{position:"fixed", top:'10px', right:'10px'}}>
+        <ProjectMenu />
+    </Box>
     <Grid container spacing={0}>      
             {/* Hero Section contains an image and a para */}
             <Grid item container spacing={1} xs={12}>
@@ -20,7 +23,7 @@ return(
                     <Item> This is an Image.</Item>
                 </Grid>
                 <Grid item xs={12} md={8}>
-                    <Item> This is a Paragraph.</Item>
+                    <Item> This is a Paragraph.</Item>                    
                 </Grid>            
         </Grid>
         {/* This is the Projects section */}
@@ -57,6 +60,7 @@ return(
             <Item>Footer Section</Item>
         </Grid>
     </Grid>
+    </>
 );
 }
 
