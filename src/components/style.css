@@ -159,6 +159,9 @@ h2 {
   background-color: rgb(190, 190, 190);
   padding: 1rem;
 }
+h3 {
+  margin: 1rem;
+}
 a {
   text-decoration: none;
 }
@@ -167,6 +170,11 @@ img {
 }
 li {
   margin: 0.5rem 0;
+}
+.flex {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 .flex-center {
     display: flex;
@@ -186,6 +194,20 @@ li {
 .hero-code-wrapper {
     height: 30rem;
     padding: 5rem;
+}
+/************ Projects ***********/
+.thumbnail {
+  width: 100%;    
+  margin-bottom: 1rem;
+  border-bottom: 1px solid grey;
+}
+.project-card {
+  width: 400px;
+  background-color: rgb(192, 192, 250);
+  padding-bottom: 1rem;
+  margin-bottom: 1rem;
+  box-shadow: 1px 1px 5px grey;
+  border-radius: .5rem;
 }
 /************ Footer ***********/
 .footer {
