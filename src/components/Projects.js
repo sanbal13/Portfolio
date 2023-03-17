@@ -2,7 +2,8 @@ import React from 'react'
 
 export default function Projects() {
   return (
-    <>
+    <div className='padding-3rem'>
+    <div className="container">
     <h2>Projects</h2>
      <ul className='flex'>     
         <li className='project-card'><a href="https://activity-tracker-tau.vercel.app/" target="_blank" rel="noreferrer"><img src="./images/activity_tracker.png" alt="activity_tracker" className="thumbnail"/></a>
@@ -21,6 +22,7 @@ export default function Projects() {
         <a href="https://logic-games.vercel.app/" target="_blank" rel="noreferrer" className="site-button">Visit Site</a>
         </li>            
      </ul>
-     </>
+     </div>
+     </div>
   )
 }

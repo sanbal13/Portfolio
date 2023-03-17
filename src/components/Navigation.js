@@ -5,7 +5,7 @@ import { faTwitter, faGithub } from '@fortawesome/free-brands-svg-icons';
 
 export default function Navigation() {
   return (
-    <header className="flex">
+    <header className="flex container">
       <div className="main-logo">
         Santosh Balchandran
       </div>

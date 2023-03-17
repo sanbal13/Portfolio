@@ -142,24 +142,23 @@ body {
     max-width: 1400px;
     width: 100%;
     margin: 0 auto;
-    padding: 1rem;  
 }
 h1,
 h2,
 h3,
 h4 {
   font-weight: 700;
+  color: grey;
 }
 h1 {
   font-size: 2.5rem;
 }
 h2 {
-  font-weight: 2rem;
-  
-   background: radial-gradient(rgb(244, 244, 178), rgb(241, 169, 169), khaki); 
-  background-color: rgb(190, 190, 190);
-  padding: 1rem;
-  box-shadow: 1px 1px 1px #000;
+  font-size: 3rem;  
+  text-align: center;
+  margin: 2rem 0 5rem 0;
+  border-bottom: 2px solid rgb(220, 220, 220);;
+  padding-bottom: 2rem;
 }
 h3 {
   margin: 1rem;
@@ -187,6 +186,12 @@ li {
     align-items: center;
     height: 100%;
 }
+.padding-3rem {
+  padding: 3rem 0;
+}
+.background-primary {
+  background-color: rgb(244, 244, 178);
+}
 /************ Navigation ***********/
 .main-logo {
   font-family: 'Orbitron', sans-serif;
@@ -203,8 +208,7 @@ li {
   color: #000;
 }
 header {
-  border-bottom: 1px solid rgb(222, 220, 220);
- /*  padding-bottom: 1rem; */
+  border-bottom: 2px solid rgb(220, 220, 220);
 }
 header ul li {
   margin-left: 2rem;
@@ -224,7 +228,7 @@ header ul li {
   display: none;
 }
 header li:hover {
-  background-color: rgb(245, 245, 150);
+  background-color: rgb(244, 244, 178);
 }
 header li:hover .tooltip {
   display: block;
@@ -236,13 +240,11 @@ header li:hover .tooltip {
   color: rgb(36,41,47);
 }
 /************ Hero Section ***********/
-.hero-section {
-  padding: 2rem;
-}
+
 .profile-image {
   border-radius: 50%;
-  height: 10rem;
-  width: 10rem;
+  height: 30rem;
+  width: 30rem;
   box-shadow: 1px 1px 20px #000;
   outline: 10px solid #fff;
 }
@@ -253,12 +255,9 @@ header li:hover .tooltip {
     border-radius: 1rem;
 }
 /************ Skills ***********/
-.logo-section {
-  padding: 2rem;
-  margin: 2rem;
-}
 .logo-container {
   width: 25%;
+  text-align: center;
 }
 .logo {
   width: 10rem;
@@ -306,7 +305,18 @@ header li:hover .tooltip {
 /************ Footer ***********/
 .footer {
   background-color: grey;
+  color: rgb(244, 244, 178);
+}
+.attribution {
+  background-color: rgb(41, 40, 40);
   padding: 1rem;
-  color: #fff;
+  width: 40rem;
+  box-shadow: inset 1px 1px 10px #fff;
   margin-top: 1rem;
+}
+.attribution li {
+  display: inline-block;
+}
+.attribution li::after {
+  content: " | ";
 }
