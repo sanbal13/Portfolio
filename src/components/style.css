@@ -191,13 +191,43 @@ li {
 .main-logo {
   font-family: 'Orbitron', sans-serif;
   font-size: 2.5rem;
+  cursor: pointer;
+  padding: 1rem;
+  padding-right: 2rem;
+  padding-bottom: 2rem;
+  color: grey;
+}
+.main-logo:hover {
+  background-color: rgb(240, 240, 240);
+  border-bottom-right-radius: 1rem;
+  color: #000;
 }
 header {
   border-bottom: 1px solid rgb(222, 220, 220);
-  padding-bottom: 1rem;
+ /*  padding-bottom: 1rem; */
 }
 header ul li {
   margin-left: 2rem;
+  padding: 1rem;
+  border-bottom-right-radius: 50%;
+  border-top-left-radius: 50%;
+  position: relative;
+}
+.tooltip {
+  position: absolute;
+  bottom: -3rem;
+  background-color: #706f6f;
+  color: #fff;
+  padding: .5rem .7rem;
+  font-weight: 700;
+  border-radius: .5rem;
+  display: none;
+}
+header li:hover {
+  background-color: rgb(245, 245, 150);
+}
+header li:hover .tooltip {
+  display: block;
 }
 .blue {
   color: rgb(29,155,240);
