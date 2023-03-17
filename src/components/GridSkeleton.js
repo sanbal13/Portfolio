@@ -1,11 +1,10 @@
 import Grid from '@mui/material/Unstable_Grid2/Grid2';
-import { Box } from '@mui/material';
-import ProjectMenu from './ProjectMenu';
 import Footer from './Footer';
 import Blogs from './Blogs';
 import Skills from './Skills';
 import Projects from './Projects';
 import HeroCode from './HeroCode';
+import Navigation from './Navigation';
 
 function GridSkeleton() {
   return (
@@ -13,7 +12,8 @@ function GridSkeleton() {
       {/* <Box sx={{ position: 'fixed', top: '10px', right: '10px' }}>
         <ProjectMenu />
       </Box> */}
-      <h2>About</h2>
+      <Navigation />
+      
       <Grid container spacing={0}>
         {/* Hero Section contains an image and a para */}       
         <Grid item xs={12}>

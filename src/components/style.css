@@ -166,6 +166,7 @@ h3 {
 }
 a {
   text-decoration: none;
+  cursor: pointer;
 }
 img {
     width: 100%;
@@ -176,6 +177,7 @@ li {
 .flex {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   flex-wrap: wrap;
 }
 .flex-center {
@@ -184,6 +186,24 @@ li {
     justify-content: center;
     align-items: center;
     height: 100%;
+}
+/************ Navigation ***********/
+.main-logo {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 2.5rem;
+}
+header {
+  border-bottom: 1px solid rgb(222, 220, 220);
+  padding-bottom: 1rem;
+}
+header ul li {
+  margin-left: 2rem;
+}
+.blue {
+  color: rgb(29,155,240);
+}
+.black {
+  color: rgb(36,41,47);
 }
 /************ Hero Section ***********/
 .hero-section {
