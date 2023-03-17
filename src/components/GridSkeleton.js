@@ -10,11 +10,12 @@ import HeroCode from './HeroCode';
 function GridSkeleton() {
   return (
     <>
-      <Box sx={{ position: 'fixed', top: '10px', right: '10px' }}>
+      {/* <Box sx={{ position: 'fixed', top: '10px', right: '10px' }}>
         <ProjectMenu />
-      </Box>
+      </Box> */}
+      <h2>About</h2>
       <Grid container spacing={0}>
-        {/* Hero Section contains an image and a para */}
+        {/* Hero Section contains an image and a para */}       
         <Grid item xs={12}>
           <HeroCode />
         </Grid>
