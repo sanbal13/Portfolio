@@ -8,8 +8,7 @@ export default function Blogs() {
     <h2>Blogs</h2>
      <ul className='flex'>    
      {blogs.map(blog => 
-      <li key = {blog.id} className="card">
-        {/* <h3>{blog.title}</h3> */}
+      <li key = {blog.id} className="card">       
         <div className="thumbnail"><img src={blog.thumbnail} alt={blog.title}/>
         <a href={blog.link} target="_blank" rel='noreferrer' className='card-button'>Visit Blog</a>
         </div>

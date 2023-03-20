@@ -6,7 +6,7 @@ export default function MyConnect() {
   return (
     <nav>
     <ul className="flex">
-      <li>
+      <li className='logo-resume'>
         <a
           href="https://drive.google.com/file/d/1DRLzBRpOVjZcXuNCMF0pyqtMwLbVbFjw/view?usp=sharing"
           target="_blank"
@@ -21,7 +21,7 @@ export default function MyConnect() {
         <div className="tooltip">Resume</div>
       </li>
 
-      <li>
+      <li className='logo-github'>
         <a
           href="https://github.com/sanbal13"
           target="_blank"
@@ -31,7 +31,7 @@ export default function MyConnect() {
         </a>
         <div className="tooltip">Github</div>
       </li>
-      <li>
+      <li className="logo-codewars">
         <a
           href="https://www.codewars.com/users/sanbal13"
           target="_blank"
@@ -45,7 +45,7 @@ export default function MyConnect() {
         </a>
         <div className="tooltip">Codewars</div>
       </li>
-      <li>
+      <li className='logo-twitter'>
         <a
           href="https://twitter.com/sanbal2016"
           target="_blank"
