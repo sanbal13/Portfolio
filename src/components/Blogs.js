@@ -1,14 +1,21 @@
-import React from 'react'
+import React from 'react';
+import blogs from '../data/blogs';
 
 export default function Blogs() {
   return (
     <div className='padding-3rem background-primary'>
     <div className="container">
     <h2>Blogs</h2>
-     <ul>     
-        <li><a href="https://sanbal13.hashnode.dev/introduction-to-git-and-github-cke8drv97005is9s17g76cwfz" target="_blank" rel="noreferrer">Introduction to Git and Github</a></li>
-            <li><a href="https://sanbal13.hashnode.dev/manipulating-array-using-sort-in-javascript-ckihc8toz00i580s13uqr7icm" target="_blank" rel="noreferrer">Manipulating Array using sort() in JavaScript</a></li>
-          <li><a href="https://sanbal13.hashnode.dev/accessing-data-sent-by-client-on-the-server-side-using-nodejs-ckpsty7f30e2ycls11rvt4oz8" target="_blank" rel="noreferrer"> Accessing Data sent by Client on the Server Side using Node.js</a></li>
+     <ul className='flex'>    
+     {blogs.map(blog => 
+      <li key = {blog.id} className="card">
+        {/* <h3>{blog.title}</h3> */}
+        <div className="thumbnail"><img src={blog.thumbnail} alt={blog.title}/>
+        <a href={blog.link} target="_blank" rel='noreferrer' className='card-button'>Visit Blog</a>
+        </div>
+      </li>
+     )
+     }         
      </ul>
      </div>
      </div>

@@ -5,7 +5,7 @@ export default function Skills() {
   useEffect(() => {
     const logoChangeInterval = setInterval(() => {
       activeLogo === 'even' ? setActiveLogo('odd') : setActiveLogo('even');
-    }, 1000);
+    }, 2000);
     return () => {
       clearInterval(logoChangeInterval);
     };
