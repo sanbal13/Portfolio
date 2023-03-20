@@ -314,6 +314,8 @@ header li:hover .tooltip {
 .primary-footer {
   padding-bottom: 2rem;
   border-bottom: 1px solid rgba(244, 244, 178, .4);
+  font-weight: 300;
+  letter-spacing: .2rem;
 }
 .footer h4 {
   color:rgba(244, 244, 178, .4);

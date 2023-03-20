@@ -6,7 +6,7 @@ export default function Footer() {
     <div className="footer padding-3rem">
     <div className="container">
     <div className="primary-footer">
-      <center>Made by Santosh Balchandran(Full Stack Web Developer)</center>
+      Made by Santosh Balchandran(Full Stack Web Developer)
       </div>
       <div className="connect-footer">
       <MyConnect />
