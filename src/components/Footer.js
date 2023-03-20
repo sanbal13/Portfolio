@@ -1,12 +1,19 @@
 import React from 'react';
+import MyConnect from './MyConnect';
 
 export default function Footer() {
   return (
     <div className="footer padding-3rem">
     <div className="container">
+    <div className="primary-footer">
       <center>Made by Santosh Balchandran(Full Stack Web Developer)</center>
+      </div>
+      <div className="connect-footer">
+      <MyConnect />
+      </div>
+      <div className="attribution-footer">
       <div className="attribution">
-        <h3>Attribution to the contributors</h3>
+        <h4>Attribution to the contributors</h4>
         <ul>
           <li>
             <a
@@ -129,6 +136,7 @@ export default function Footer() {
               rel="noreferrer">IconScout</a>
           </li>
         </ul>
+      </div>
       </div>
     </div>
     </div>

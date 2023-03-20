@@ -163,6 +163,9 @@ h2 {
 h3 {
   margin: 1rem;
 }
+h4 {
+  margin-bottom: 1rem;
+}
 a {
   text-decoration: none;
   cursor: pointer;
@@ -306,17 +309,31 @@ header li:hover .tooltip {
 .footer {
   background-color: grey;
   color: rgb(244, 244, 178);
+  text-align: center;
 }
-.attribution {
-  background-color: rgb(41, 40, 40);
-  padding: 1rem;
-  width: 40rem;
-  box-shadow: inset 1px 1px 10px #fff;
-  margin-top: 1rem;
+.primary-footer {
+  padding-bottom: 2rem;
+  border-bottom: 1px solid rgba(244, 244, 178, .4);
+}
+.footer h4 {
+  color:rgba(244, 244, 178, .4);
 }
 .attribution li {
   display: inline-block;
 }
 .attribution li::after {
   content: " | ";
+}
+.footer a {
+  color: rgba(244, 244, 178, .4);
+} 
+.connect-footer {
+  width: 20rem;
+  margin: 2rem auto;
+  margin-bottom: 0;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid rgba(244, 244, 178, .4);
+}
+.attribution-footer {
+  margin-top: 2rem;
 }
