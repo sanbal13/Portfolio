@@ -5,7 +5,8 @@ import Grid from '@mui/material/Unstable_Grid2/Grid2';
 
 export default function HeroCode() {
   return (
-    <div className="hero-section padding-3rem">
+    <div className="padding-3rem">
+    <div className="hero-section container">
       <Grid container>
         <Grid item xs={12} md={6}>
           <HeroImage />
@@ -14,6 +15,7 @@ export default function HeroCode() {
           <HeroPara />
         </Grid>
       </Grid>
+    </div>
     </div>
   );
 }
