@@ -13,7 +13,7 @@ export default function Skills() {
   return (
     <div className='padding-3rem background-primary'>
     <div className="container">
-      <h2>Familiar Technologies</h2>
+      <h2>Technologies</h2>
       <ul className="flex logo-section">
         <li className="logo-container">
           <img
