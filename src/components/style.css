@@ -244,10 +244,11 @@ header ul li {
   display: none;
 }
 header li:hover {
-  background-color: rgba(190, 129, 246);
+  background-color: rgba(216,216,216);
 }
 header li:hover .tooltip {
   display: block;
+  z-index: 5;
 }
 .blue {
   color: rgb(29, 155, 240);
@@ -308,7 +309,7 @@ header li:hover .tooltip {
   box-shadow: 1px 1px 30px rgba(158, 156, 156, .5);
 }
 .thumbnail:hover {
-  outline: 5px solid rgb(222, 222, 120);
+  outline: 4px solid rgb(116, 116, 116);
   box-shadow: 1px 1px 30px rgba(158, 156, 156);
 }
 
@@ -335,18 +336,18 @@ header li:hover .tooltip {
 /************ Footer ***********/
 .footer {
   background-color: rgb(60, 60, 60);
-  color: rgba(190, 129, 246);
+  color: #fff;
   text-align: center;
 }
 .primary-footer {
   padding-bottom: 2rem;
-  border-bottom: 1px solid rgba(190, 129, 246, 0.4);
+  border-bottom: 1px solid rgba(216, 216, 216, 0.4);
   font-weight: 300;
   letter-spacing: 0.2rem;
   font-size: 1.5rem;
 }
 .footer h4 {
-  color: rgba(190, 129, 246, 0.4);
+  color: rgba(216, 216, 216, 0.4);
 }
 .attribution li {
   display: inline-block;
@@ -355,7 +356,7 @@ header li:hover .tooltip {
   content: ' | ';
 }
 .footer a {
-  color: rgba(190, 129, 246, 0.4);
+  color: rgba(216, 216, 216, 0.4);
 }
 .connect-footer {
   width: 20rem;
