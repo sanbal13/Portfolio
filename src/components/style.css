@@ -265,6 +265,10 @@ header li:hover .tooltip {
   box-shadow: 1px 1px 20px #000;
   outline: 10px solid #fff;
 }
+.profile-image:hover {
+  border: .5rem solid rgb(224, 222, 222);
+  box-shadow: 1px 1px 40px #000;
+}
 .hero-para{
   box-shadow: 1px 1px 30px #d7d5d5;
   margin: 0 3rem;
@@ -280,6 +284,9 @@ header li:hover .tooltip {
   border-radius: 1rem;
   height: 90%; 
   margin: 1rem;
+}
+.hero-para-wrapper:hover {
+  box-shadow:inset 1px 1px 50px #d7d5d5;
 }
 .circle {
   padding: 1rem;
@@ -301,7 +308,14 @@ header li:hover .tooltip {
   filter: grayscale(0%);
 }
 
-/************ Projects ***********/
+/************ Projects / Blogs ***********/
+.project-title {
+  text-align: center;
+  border-bottom: 1px solid rgb(216, 216, 216);
+  padding-bottom: 1rem;
+  margin-bottom: 2rem;
+  font-size: 2rem;
+}
 .thumbnail {
   width: 100%;
 }
@@ -332,6 +346,18 @@ header li:hover .tooltip {
 .card-button:hover {
   background-color: rgba(0, 0, 0, 0.9);
   box-shadow: 1px 1px 5px #000;
+}
+.github-link {
+  background-color: rgba(216,216,216, .8);
+  color: #000;
+  position: absolute;
+  right: 0rem;
+  top: 0rem;
+  padding: .5rem 1rem;
+  font-weight: 700;
+}
+.github-link:hover {
+  box-shadow: 1px 1px 5px grey;
 }
 /************ Footer ***********/
 .footer {
