@@ -198,6 +198,15 @@ li {
 .background-primary {
   background-color: rgba(216, 216, 216, 0.5);
 }
+.update {
+  color: rgb(116, 116, 116);
+  border: 5px double rgb(216, 216, 216);
+  font-size: 1.5rem;
+  border-radius: 1rem;
+  padding: .5rem 1rem;
+  text-align: center;
+  margin: 5rem auto;
+}
 /************ Navigation ***********/
 .main-logo {
   font-family: 'Orbitron', sans-serif;
@@ -394,3 +403,5 @@ header li:hover .tooltip {
 .attribution-footer {
   margin-top: 2rem;
 }
+
+

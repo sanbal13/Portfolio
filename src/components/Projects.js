@@ -1,5 +1,6 @@
 import React from 'react'
 import projects from '../data/projects'
+import Update from './Update'
 
 export default function Projects() {
   return (
@@ -13,11 +14,11 @@ export default function Projects() {
           <div className='card'>
           <img src={project.image} alt={project.title} className='thumbnail'/>
           <a href={project.link} target='_blank' rel='noreferrer' className='card-button'>Visit Site</a>
-          <a href={project.github_link} target='_blank' rel='noreferrer' className='github-link'>GithubLink</a>
+          <a href={project.github_link} target='_blank' rel='noreferrer' className='github-link'>Github Link</a>
           </div>
           </li>
         ))}
-       
+       <Update section="Project"/>
                 
      </ul>
      </div>
