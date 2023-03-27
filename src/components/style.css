@@ -192,6 +192,9 @@ li {
   align-items: center;
   height: 100%;
 }
+.flex-start {
+  justify-content: space-around;
+}
 .padding-3rem {
   padding: 3rem 1rem;
 }
@@ -303,6 +306,11 @@ header li:hover .tooltip {
   border-radius: 50%;
   margin: 1rem;
 }
+
+.hero-title {
+  font-weight: 500;
+  display: block;
+}
 /************ Skills ***********/
 .logo-container {
   width: 25%;
@@ -355,6 +363,11 @@ header li:hover .tooltip {
 .card-button:hover {
   background-color: rgba(0, 0, 0, 0.9);
   box-shadow: 1px 1px 5px #000;
+}
+.project-type {
+  font-size: 2rem;
+  font-weight: 100;
+  text-shadow: 2px 2px 1px grey;
 }
 .github-link {
   background-color: rgba(216,216,216, .8);
