@@ -47,7 +47,7 @@ function ProjectsDisplay(props) {
   return (
     <ul className='flex flex-start'>   
     {projects.map(project => (
-      <li key={project.id}>
+      <li key={project.title}>
       <h3 className="project-title">{project.title}</h3>
       <div className='card'>
       <img src={project.image} alt={project.title} className='thumbnail'/>
