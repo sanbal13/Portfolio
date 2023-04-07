@@ -53,6 +53,7 @@ function ProjectsDisplay(props) {
       <img src={project.image} alt={project.title} className='thumbnail'/>
       <a href={project.link} target='_blank' rel='noreferrer' className='card-button'>Visit Site</a>
       <a href={project.github_link} target='_blank' rel='noreferrer' className='github-link'>Github Link</a>
+      <div className="project-status">{project.status}</div>
       </div>
       </li>
      
