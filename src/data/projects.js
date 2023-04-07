@@ -42,11 +42,25 @@ const projects = [
         type: 'hobby'
     },
     {
-        title: "Quiz",
-        link: "https://print-web-page-content.vercel.app/",
-        image: "./images/projects/print-web-page.webp" ,
-        github_link: "https://github.com/sanbal13/Print-WebPage-Content",
+        title: "Hospital",
+        link: "https://we-care-delta.vercel.app/",
+        image: "./images/projects/we-care.png" ,
+        github_link: "https://github.com/sanbal13/WeCare",
         type: 'hobby'
+    },
+    {
+        title: "Buson",
+        link: "https://buson-gamma.vercel.app/",
+        image: "./images/projects/buson.webp" ,
+        github_link: "https://github.com/sanbal13/buson",
+        type: 'html'
+    },
+    {
+        title: "Movie App",
+        link: "https://ta-frontend-why-react-t-raaaa.vercel.app/",
+        image: "./images/projects/movie-app.webp" ,
+        github_link: "https://github.com/sanbal13/buson",
+        type: 'react'
     },
 ];
 export default projects;
