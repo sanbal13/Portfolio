@@ -6,6 +6,7 @@ import Projects from './Projects';
 import HeroCode from './HeroCode';
 import Navigation from './Navigation';
 import './style.css';
+import UpdatesInfo from './UpdatesInfo';
 
 function App() {
   return (
@@ -14,7 +15,7 @@ function App() {
         <ProjectMenu />
       </Box> */}
       <Navigation />
-      
+      <UpdatesInfo />
       <Grid container spacing={0}>
         {/* Hero Section contains an image and a para */}       
         <Grid item xs={12}>
