@@ -15,7 +15,7 @@ export default function MyConnect() {
           <img
             src="./logos/resume.png"
             alt="resume"
-            style={{ width: '4rem' }}
+            style={{ width: '3rem' }}
           />
         </a>
         <div className="tooltip">Resume</div>
@@ -27,7 +27,7 @@ export default function MyConnect() {
           target="_blank"
           rel="noreferrer"
         >
-          <FontAwesomeIcon icon={faGithub} size="4x" className="black" />
+          <FontAwesomeIcon icon={faGithub} size="3x" className="black" />
         </a>
         <div className="tooltip">Github</div>
       </li>
@@ -40,7 +40,7 @@ export default function MyConnect() {
           <img
             src="./logos/codewars.png"
             alt="codewars"
-            style={{ width: '4rem' }}
+            style={{ width: '3rem' }}
           />
         </a>
         <div className="tooltip">Codewars</div>
@@ -51,7 +51,7 @@ export default function MyConnect() {
           target="_blank"
           rel="noreferrer"
         >
-          <FontAwesomeIcon icon={faTwitter} size="4x" className="blue" />
+          <FontAwesomeIcon icon={faTwitter} size="3x" className="blue" />
         </a>
         <div className="tooltip">Twitter</div>
       </li>

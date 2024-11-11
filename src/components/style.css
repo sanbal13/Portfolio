@@ -91,6 +91,7 @@ video {
   font: inherit;
   vertical-align: baseline;
 }
+
 /* HTML5 display-role reset for older browsers */
 article,
 aside,
@@ -105,17 +106,21 @@ nav,
 section {
   display: block;
 }
+
 body {
   line-height: 1;
 }
+
 ol,
 ul {
   list-style: none;
 }
+
 blockquote,
 q {
   quotes: none;
 }
+
 blockquote:before,
 blockquote:after,
 q:before,
@@ -123,6 +128,7 @@ q:after {
   content: '';
   content: none;
 }
+
 table {
   border-collapse: collapse;
   border-spacing: 0;
@@ -132,17 +138,21 @@ table {
 body {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
     Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
 }
+
 *,
 *::before,
 *::after {
   box-sizing: border-box;
 }
+
 .container {
   max-width: 1400px;
   width: 100%;
   margin: 0 auto;
 }
+
 h1,
 h2,
 h3,
@@ -150,9 +160,11 @@ h4 {
   font-weight: 700;
   color: grey;
 }
+
 h1 {
   font-size: 2.5rem;
 }
+
 h2 {
   font-size: 3rem;
   text-align: center;
@@ -160,31 +172,43 @@ h2 {
   border-bottom: 2px solid rgb(220, 220, 220);
   padding-bottom: 2rem;
 }
+
 h3 {
   margin: 1rem;
 }
+
 h4 {
   margin-bottom: 1rem;
 }
+
 h5 {
   font-weight: 500
 }
+
 a {
   text-decoration: none;
   cursor: pointer;
 }
+
 img {
   width: 100%;
 }
+
 li {
   margin: 0.5rem 0;
 }
+
 .flex {
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
 }
+
+.justify-center {
+  justify-content: center;
+}
+
 .flex-center {
   display: flex;
   flex-direction: column;
@@ -192,15 +216,19 @@ li {
   align-items: center;
   height: 100%;
 }
+
 .flex-start {
   justify-content: space-around;
 }
+
 .padding-3rem {
   padding: 3rem 1rem;
 }
+
 .background-primary {
   background-color: rgba(216, 216, 216, 0.5);
 }
+
 .update {
   color: rgb(116, 116, 116);
   border: 5px double rgb(216, 216, 216);
@@ -210,6 +238,7 @@ li {
   text-align: center;
   margin: 5rem auto;
 }
+
 /************ Navigation ***********/
 .main-logo {
   font-family: 'Orbitron', sans-serif;
@@ -220,26 +249,32 @@ li {
   padding-bottom: 2rem;
   color: grey;
 }
+
 .main-logo:hover {
   background-color: rgb(240, 240, 240);
   border-bottom-right-radius: 1rem;
   color: #000;
 }
+
 header {
   border-bottom: 2px solid rgb(220, 220, 220);
 }
+
 header ul li {
   margin-left: 2rem;
   padding: 1rem;
   position: relative;
 }
+
 .logo-resume {
   border-radius: 1rem;
 }
+
 .logo-github,
 .logo-codewars {
   border-radius: 50%;
 }
+
 .logo-twitter {
   border-bottom-right-radius: 50%;
   border-top-left-radius: 50%;
@@ -255,33 +290,42 @@ header ul li {
   border-radius: 0.5rem;
   display: none;
 }
+
 header li:hover {
-  background-color: rgba(216,216,216);
+  background-color: rgba(216, 216, 216);
 }
+
 header li:hover .tooltip {
   display: block;
   z-index: 5;
 }
+
 .blue {
   color: rgb(29, 155, 240);
 }
+
 .black {
   color: rgb(36, 41, 47);
 }
+
 /************ Hero Section ***********/
 
 .profile-image {
   border-radius: 50%;
   height: 30rem;
   width: 30rem;
+  max-width: 90%;
   box-shadow: 1px 1px 20px #000;
   outline: 10px solid #fff;
+  margin: 1rem;
 }
+
 .profile-image:hover {
   border: .5rem solid rgb(224, 222, 222);
   box-shadow: 1px 1px 40px #000;
 }
-.hero-para{
+
+.hero-para {
   box-shadow: 1px 1px 30px #d7d5d5;
   margin: 0 3rem;
   border-radius: 1rem;
@@ -290,16 +334,20 @@ header li:hover .tooltip {
   font-size: 1.4rem;
   color: grey;
 }
-.hero-para-wrapper  {
-  rotate:-10deg;
+
+.hero-para-wrapper {
+  /* rotate:-10deg; */
   box-shadow: inset 1px 1px 30px #d7d5d5;
   border-radius: 1rem;
-  height: 90%; 
+  /*  height: 100%;  */
   margin: 1rem;
+  max-width: 100%;
 }
+
 .hero-para-wrapper:hover {
-  box-shadow:inset 1px 1px 50px #d7d5d5;
+  box-shadow: inset 1px 1px 50px #d7d5d5;
 }
+
 .circle {
   padding: 1rem;
   box-shadow: 1px 1px 30px #d7d5d5;
@@ -311,21 +359,30 @@ header li:hover .tooltip {
   font-weight: 500;
   display: block;
 }
+
 /************ Skills ***********/
 .logo-container {
-  width: 25%;
+  /* width: 25%; */
   text-align: center;
+  margin: 1rem;
+
 }
+
 .logo {
   width: 10rem;
   cursor: pointer;
   filter: grayscale(100%);
 }
+
 .logo:hover {
   filter: grayscale(0%);
 }
 
 /************ Projects / Blogs ***********/
+.blog li {
+  margin: 1rem;
+}
+
 .project-title {
   text-align: center;
   border-bottom: 1px solid rgb(216, 216, 216);
@@ -333,21 +390,25 @@ header li:hover .tooltip {
   margin-bottom: 2rem;
   font-size: 2rem;
 }
+
 .thumbnail {
   width: 100%;
 }
+
 .thumbnail img {
   box-shadow: 1px 1px 30px rgba(158, 156, 156, .5);
 }
+
 .thumbnail:hover {
   outline: 4px solid rgb(116, 116, 116);
   box-shadow: 1px 1px 30px rgba(158, 156, 156);
 }
 
 .card {
-  width: 400px; 
+  max-width: 100%;
   border-radius: 0.5rem;
   position: relative;
+  margin: 1rem;
 }
 
 .card-button {
@@ -360,10 +421,12 @@ header li:hover .tooltip {
   padding: 1rem 1.5rem;
   border-radius: 0.5rem;
 }
+
 .card-button:hover {
   background-color: rgba(0, 0, 0, 0.9);
   box-shadow: 1px 1px 5px #000;
 }
+
 .project-type {
   font-size: 2rem;
   font-weight: 100;
@@ -371,17 +434,19 @@ header li:hover .tooltip {
   background-color: rgb(233, 233, 233);
   padding: .5rem 1rem;
 }
+
 .project-status {
   background-color: rgba(255, 215, 0, .8);
   position: absolute;
   padding: 1rem;
-  top: 1rem;  
+  top: 1rem;
   color: rgba(0, 0, 0, .9);
   font-weight: 700;
   outline: 2px solid #fff;
 }
+
 .github-link {
-  background-color: rgba(216,216,216, .8);
+  background-color: rgba(216, 216, 216, .8);
   color: #000;
   position: absolute;
   right: 0rem;
@@ -389,15 +454,18 @@ header li:hover .tooltip {
   padding: .5rem 1rem;
   font-weight: 700;
 }
+
 .github-link:hover {
   box-shadow: 1px 1px 5px grey;
 }
+
 /************ Footer ***********/
 .footer {
   background-color: rgb(60, 60, 60);
   color: #fff;
   text-align: center;
 }
+
 .primary-footer {
   padding-bottom: 2rem;
   border-bottom: 1px solid rgba(216, 216, 216, 0.4);
@@ -405,27 +473,44 @@ header li:hover .tooltip {
   letter-spacing: 0.2rem;
   font-size: 1.5rem;
 }
+
 .footer h4 {
   color: rgba(216, 216, 216, 0.4);
 }
+
 .attribution li {
   display: inline-block;
 }
+
 .attribution li::after {
-  content: ' | ';
+  content: '\00a0\00a0\00a0|\00a0\00a0\00a0';
 }
+
 .footer a {
   color: rgba(216, 216, 216, 0.4);
 }
+
 .connect-footer {
   width: 20rem;
+  max-width: 100%;
   margin: 2rem auto;
   margin-bottom: 0;
   padding-bottom: 1rem;
   border-bottom: 1px solid rgba(190, 129, 246, 0.4);
 }
+
 .attribution-footer {
   margin-top: 2rem;
 }
 
+.developer-designation-hr {
+  background-color: green;
+  height: .01px;
+  width: 70%;
+}
 
+@media (min-width: 500px) {
+  .card {
+    width: 400px;
+  }
+}

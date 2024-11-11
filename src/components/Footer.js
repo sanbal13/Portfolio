@@ -1,144 +1,61 @@
 import React from 'react';
 import MyConnect from './MyConnect';
+import attributions from '../data/attributions';
+import useMediaQuery from '@mui/material/useMediaQuery'
 
 export default function Footer() {
+  const isBigScreen = useMediaQuery('(min-width: 882px)');
   return (
     <div className="footer padding-3rem">
-    <div className="container">
-    <div className="primary-footer">
-      Developed by Santosh Balchandran | Full Stack Web Developer
+      <div className="container">
+        <div className="primary-footer">
+          <span className="developer">
+            Developed by Santosh Balchandran
+          </span>
+          { isBigScreen ?
+          (<span className="separator">
+           {' '} | {' '}
+          </span>) : <hr className="developer-designation-hr"/>
+          }
+          <span className="designation">
+            Full Stack Web Developer
+          </span>
+        </div>
+        <div className="connect-footer">
+          <MyConnect />
+        </div>
+        <div className="attribution-footer">
+          <div className="attribution">
+            <h4>Attribution to the contributors</h4>
+            <ul>
+              {attributions.map(attribution =>
+                <li key={attribution.icon}>
+                  <a
+                    href={attribution.iconLink}
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    {attribution.icon}
+                  </a>{' '}
+                  by{' '}
+                  <a
+                    href={attribution.contributorLink}
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    {attribution.contributor}
+                  </a>
+                  on{' '}
+                  <a href={attribution.siteLink} target="_blank"
+                    rel="noreferrer">
+                    {attribution.site}
+                  </a>
+                </li>
+              )}
+            </ul>
+          </div>
+        </div>
       </div>
-      <div className="connect-footer">
-      <MyConnect />
-      </div>
-      <div className="attribution-footer">
-      <div className="attribution">
-        <h4>Attribution to the contributors</h4>
-        <ul>
-          <li>
-            <a
-              href="https://iconscout.com/icons/html5"
-              target="_blank"
-              rel="noreferrer"
-            >
-              Html5 Icon
-            </a>{' '}
-            by{' '}
-            <a
-              href="https://iconscout.com/contributors/icon-mafia"
-              target="_blank"
-              rel="noreferrer"
-            >
-              Icon Mafia
-            </a>
-            on{' '}
-            <a href="https://iconscout.com" target="_blank"
-              rel="noreferrer">
-              IconScout
-            </a>
-          </li>
-          <li>
-            <a
-              href="https://iconscout.com/icons/css"
-              target="_blank"
-              rel="noreferrer"
-            >
-              Css Icon
-            </a>{' '}
-            by{' '}
-            <a
-              href="https://iconscout.com/contributors/icon-mafia"
-              target="_blank"
-              rel="noreferrer"
-            >
-              Icon Mafia
-            </a>
-            on{' '}
-            <a href="https://iconscout.com" target="_blank"
-              rel="noreferrer">
-              IconScout
-            </a>
-          </li>
-          <li>
-            <a
-              href="https://iconscout.com/icons/javascript"
-              target="_blank"
-              rel="noreferrer"
-            >
-              Javascript Icon
-            </a>{' '}
-            by{' '}
-            <a
-              href="https://iconscout.com/contributors/icon-54"
-              target="_blank"
-              rel="noreferrer"
-            >
-              Icon 54
-            </a>{' '}
-            on <a href="https://iconscout.com" target="_blank"
-              rel="noreferrer">IconScout</a>
-          </li>
-          <li>
-            <a
-              href="https://iconscout.com/icons/react"
-              target="_blank"
-              rel="noreferrer"
-            >
-              React Icon
-            </a>{' '}
-            by{' '}
-            <a href="https://iconscout.com/contributors/icon-mafia" target="_blank"
-              rel="noreferrer">
-              Icon Mafia
-            </a>{' '}
-            on{' '}
-            <a href="https://iconscout.com" target="_blank"
-              rel="noreferrer">
-              IconScout
-            </a>
-          </li>
-          <li>
-            <a
-              href="https://iconscout.com/icons/node-js"
-              target="_blank"
-              rel="noreferrer"
-            >
-              Node Js Icon
-            </a>{' '}
-            by{' '}
-            <a
-              href="https://iconscout.com/contributors/icon-mafia"
-              target="_blank"
-              rel="noreferrer"
-            >
-              Icon Mafia
-            </a>{' '}
-            on <a href="https://iconscout.com" target="_blank"
-              rel="noreferrer">IconScout</a>
-          </li>
-          <li>
-            <a
-              href="https://iconscout.com/icons/mongodb"
-              target="_blank"
-              rel="noreferrer"
-            >
-              Mongodb Icon
-            </a>{' '}
-            by{' '}
-            <a
-              href="https://iconscout.com/contributors/icon-mafia"
-              target="_blank"
-              rel="noreferrer"
-            >
-              Icon Mafia
-            </a>{' '}
-            on <a href="https://iconscout.com" target="_blank"
-              rel="noreferrer">IconScout</a>
-          </li>
-        </ul>
-      </div>
-      </div>
-    </div>
     </div>
   );
 }

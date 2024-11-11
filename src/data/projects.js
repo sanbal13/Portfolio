@@ -66,7 +66,7 @@ const projects = [
     {
         title: "Movie App",
         link: "https://ta-frontend-why-react-t-raaaa.vercel.app/",
-        image: "./images/projects/movie-app.webp" ,
+        image: "./images/projects/buson.webp" ,
         github_link: "https://github.com/sanbal13/buson",
         type: 'react',
         status: 'Completed'

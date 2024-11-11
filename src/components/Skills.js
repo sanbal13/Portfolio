@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+import skills from '../data/skills';
 
 export default function Skills() {
   const [activeLogo, setActiveLogo] = useState('odd');
@@ -14,71 +15,19 @@ export default function Skills() {
     <div className='padding-3rem background-primary'>
     <div className="container">
       <h2>Technologies</h2>
-      <ul className="flex logo-section">
-        <li className="logo-container">
-          <img
-            src="./logos/html5.png"
-            alt="html-logo"
+      <ul className="flex justify-center">
+        {
+          skills.map(skill => 
+            <li className='logo-container' key={skill.alt}>
+               <img
+            src={skill.src}
+            alt={skill.alt}
             className="logo"
-            style={activeLogo === 'odd' ? { filter: 'grayscale(0%)' } : {}}
+            style={activeLogo === skill.position ? { filter: 'grayscale(0%)' } : {}}
           />
-        </li>
-        <li className="logo-container">
-          <img
-            src="./logos/css.png"
-            alt="css-logo"
-            className="logo"
-            style={activeLogo === 'even' ? { filter: 'grayscale(0%)' } : {}}
-          />
-        </li>
-        <li className="logo-container">
-          <img
-            src="./logos/javascript.png"
-            alt="javascript-logo"
-            className="logo"
-            style={activeLogo === 'odd' ? { filter: 'grayscale(0%)' } : {}}
-          />
-        </li>
-        <li className="logo-container">
-          <img
-            src="./logos/react.png"
-            alt="react-logo"
-            className="logo"
-            style={activeLogo === 'even' ? { filter: 'grayscale(0%)' } : {}}
-          />
-        </li>
-        <li className="logo-container">
-          <img
-            src="./logos/node-js.png"
-            alt="node-logo"
-            className="logo"
-            style={activeLogo === 'odd' ? { filter: 'grayscale(0%)' } : {}}
-          />
-        </li>
-        <li className="logo-container" style={{ alignSelf: 'center' }}>
-          <img
-            src="./logos/express.png"
-            alt="express-logo"
-            className="logo"
-            style={activeLogo === 'even' ? { filter: 'grayscale(0%)' } : {}}
-          />
-        </li>
-        <li className="logo-container">
-          <img
-            src="./logos/mongodb.png"
-            alt="mongodb-logo"
-            className="logo"
-            style={activeLogo === 'odd' ? { filter: 'grayscale(0%)' } : {}}
-          />
-        </li>
-        <li className="logo-container">
-          <img
-            src="./logos/mongoose.png"
-            alt="mongoose-logo"
-            className="logo"
-            style={activeLogo === 'even' ? { filter: 'grayscale(0%)' } : {}}
-          />
-        </li>
+            </li>
+          )
+        }
       </ul>
     </div>
     </div>
