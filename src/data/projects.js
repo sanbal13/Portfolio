@@ -66,9 +66,9 @@ const projects = [
     {
         title: "Movie App",
         link: "https://ta-frontend-why-react-t-raaaa.vercel.app/",
-        image: "./images/projects/buson.webp" ,
-        github_link: "https://github.com/sanbal13/buson",
-        type: 'react',
+        image: "./images/projects/movie.webp" ,
+        github_link: "https://github.com/sanbal13/TA-FRONTEND-why-react-TRaaaa/tree/block-BRaaaa/block-BRaaaa/code",
+        type: 'javascript',
         status: 'Completed'
     },
 ];
